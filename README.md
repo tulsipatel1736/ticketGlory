@@ -1,4 +1,4 @@
-🎟️ TicketGlory
+###🎟️ TicketGlory
 TicketGlory is a simple, user-friendly website designed to help users discover and book tickets to a variety of entertainment events. Whether it's concerts, plays, movies, or local community gatherings, TicketGlory offers a smooth experience to browse, view details, and keep track of bookings.
 
 🌐 Website Features
