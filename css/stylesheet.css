@@ -1,0 +1,339 @@
+@charset "utf-8";
+/*Affects the whole document */
+html,
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif, Verdana, Tahoma, sans-serif; 
+}
+
+/*To wrap the content of the whole page. */
+#wrapper {
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  padding: 92px;
+}
+.wrapper.list {
+  grid-template-columns: 1fr;
+}
+
+.wrapper .col {
+  width: calc(100% - 20px);
+  height: 200px;
+  background: #912f40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fffffa;
+  margin: 20px;
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  justify-content: space-around;
+	align-items: center;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  background-color: #333;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+}
+
+
+#sidebar {
+	padding: 10px;
+	width: 450px;
+	height: 480px;
+	float: left;
+	font-size: medium;
+	text-align: center;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+h1 {
+  text-shadow: 2px 2px 5px red;
+  padding: 0;
+  margin: 0;
+}
+
+h2{
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  margin: 50px;
+  text-shadow: 2px 2px 5px green;
+}
+
+h4{
+  font-size: 25px;
+  text-align: center;
+  color: black;
+  margin: 60px;
+}
+
+h5{
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  margin-top: 50px;
+  padding-top: 10px;
+  text-shadow: 2px 2px 5px green;
+}
+h6{
+  text-align: center;
+  font-size: medium;
+  padding: 5px;
+}
+
+.event {
+  display: flex;
+  flex-wrap: wrap;
+}
+.event-detail {
+  flex: 1 0 250px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  margin: 10px 8px 8px 8px;
+  padding: 8px;
+}
+
+.event-detail img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto;
+}
+
+.jumbotron{
+  height: 700px;
+  background-image: url('https://i.pinimg.com/originals/db/b3/37/dbb3378ac8b46699dfd456c6fda3bcb5.jpg');
+}
+
+footer {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgb(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 7rem;
+  padding: 2px;
+}
+/* Form*/
+form{
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  width : 100%;
+}
+/* Style for text type*/
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+input[type=text], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	box-sizing: border-box;
+	border: 3px solid #ccc;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+	border-radius: 4px;
+	background-color: rgba(207,207,207,1.00);
+}
+/* Style for type submit and reset*/
+input[type=submit] {
+	width: 100%;
+	background-color: #008CFF;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+input[type=reset] {
+	width: 100%;
+	background-color: #008CFF;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+	
+input[type=submit]:hover {
+	background-color: #77BCF4;
+}
+input[type=reset]:hover {
+	background-color: #77BCF4;
+}
+
+/* Style for date type */
+input[type=date]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=date]:focus {
+  border: 3px solid #555;
+}
+
+input[type=date], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	box-sizing: border-box;
+	border: 3px solid #ccc;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+	border-radius: 4px;
+	background-color: rgba(207,207,207,1.00);
+}
+/* Style for time type */
+input[type=time]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=time]:focus {
+  border: 3px solid #555;
+}
+
+input[type=time], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	box-sizing: border-box;
+	border: 3px solid #ccc;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+	border-radius: 4px;
+	background-color: rgba(207,207,207,1.00);
+}
+/* Style for number type */
+input[type=number]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=number]:focus {
+  border: 3px solid #555;
+}
+
+input[type=number], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	box-sizing: border-box;
+	border: 3px solid #ccc;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+	border-radius: 4px;
+	background-color: rgba(207,207,207,1.00);
+}
+
+/* Style for file type */
+input[type=file]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=file]:focus {
+  border: 3px solid #555;
+}
+
+input[type=file], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	box-sizing: border-box;
+	border: 3px solid #ccc;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+	border-radius: 4px;
+	background-color: rgba(207,207,207,1.00);
+}
+
+#comment-box, #post {
+  border: none;
+  border-radius: 5px;
+}
+
+#post:hover{
+  background-color: green;
+  color: white;
+}
+
+#post{
+  background-color: rgb(196, 193, 193);
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
+
+/*POPUP*/

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ticket Glory</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+    
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+        <!-- Contains the heading, navigation and banner image -->
+        <header>
+              <div id="navigationbar">
+                <nav class="navbar navbar-inverse">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                      <h1 class="navbar-brand">TICKET GLORY</h1>
+                    </div>
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="index.html">Event</a></li>
+                      <li><a href="event_create.html">Create Event</a></li>
+                      <li><a href="booking_history.html">Booking History</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+
+        </header>
+             
+        <h5>Create An Event</h5>
+        <form action="/action_page.php">
+
+          <label for="eventName">Event Name</label>
+          <input type="text" id="eventName">
+       
+          <label for="description">Description</label>
+          <input type="text" id="description">	 
+         
+          <label for="artist">Artist Names</label>
+          <input type="text" id="artist">
+
+          <label for="Date">Date of Event</label> <br>
+          <input type="date" id="Date">	<br>
+
+          <label for="Time">Start Time</label><br>
+          <input type="time" id="Time">	<br>
+
+          <label for="venue">Venue of Event</label>
+          <input type="text" id="venue">
+
+          <label for="price">Price Per Ticket</label><br>
+          <input type="number" step="any" id="price"><br>
+
+          <label for="tickets">Number of Tickets Available</label><br>
+          <input type="number" id="tickets"><br>
+
+          <label for="Status">Status of Event</label>
+           <select id="status" name="status">
+           <option value="upcoming">Upcoming</option>
+             <option value="inactive">Inactive</option>
+             <option value="booked">Booked</option>
+             <option value="cancelled">Cancelled</option>
+          </select>
+         
+          <label for = "file">Upload Image</label>
+          <input type="file" id="myFile" name="filename">
+         
+         <input type="submit" value="Add Event">
+         <input type="reset" value="Clear">
+       </form>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
+      crossorigin="anonymous">
+
+    </script>
+  </div>
+
+
+  </body>
+
+  <footer>
+    <p>Author: Tulsi Patel<br>
+      <a href="mailto:tulsi.patel@connect.edu.au">Email Us</a></p>
+  </footer>
+</html>
