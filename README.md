@@ -3,7 +3,7 @@ TicketGlory is a simple, user-friendly website designed to help users discover a
 
 ---
 
-🌐 Website Features
+<h3>🌐 Website Features </h3>
 Homepage (index.html):
 Provides a welcoming overview of TicketGlory and showcases featured or upcoming events.
 
@@ -18,7 +18,7 @@ Lets users view a summary of their previously booked tickets.
 
 ---
 
-💡 How to Use
+<h3>💡 How to Use </h3>
 Clone the repository: https://github.com/tulsipatel1736/ticketGlory.git
 Open index.html in your web browser to explore the site.
 
@@ -26,7 +26,7 @@ Navigate to other pages to create events or view bookings.
 
 ---
 
-🚀 Future Improvements
+<h3> 🚀 Future Improvements</h3>
 Add a backend with database support for storing events and bookings.
 
 Implement user authentication for secure bookings.
@@ -35,5 +35,6 @@ Responsive design for mobile devices.
 
 Real-time ticket availability updates.
 
+---
 👩‍💻 Developed by
 Tulsi Patel
